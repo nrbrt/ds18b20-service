@@ -1,0 +1,13 @@
+[Unit]
+Description=meassures all ds18b20 sensors and sends results to an mqtt server
+Requires=mosquitto.service
+After=mosquitto.service
+
+[Service]
+Type=simple
+User=pi
+ExecStart=/usr/bin/node /home/pi/node-projects/ds18b20-service/index.js
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
