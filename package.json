@@ -1,0 +1,15 @@
+{
+  "name": "ds18b20-service",
+  "version": "1.0.0",
+  "description": "reads all ds18b20 sensors and sends data to local mqtt server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nrbrt",
+  "license": "ISC",
+  "dependencies": {
+    "ds18b20-raspi": "^0.3.3",
+    "mqtt": "^3.0.0"
+  }
+}
