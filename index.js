@@ -5,7 +5,7 @@ const client = mqtt.connect('tcp://localhost')
 function senddata(){
     setInterval(function(){
 	client.publish('temp_sensors', JSON.stringify(sensor.readAllC(2)));
-    }, 750);
+    }, 900);
 }
 
 senddata();
